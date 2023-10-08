@@ -84,7 +84,7 @@ export default function Projects() {
 
        <div className='py-3 px-3 my-8 rounded-lg max-w-sm bg-white shadow-lg shadow-gray-400'>
       <Image src={booknote} alt='quiz' />
-      <h3 className='text-2xl my-2'>Book Note App (full-stack)</h3>
+      <h3 className='text-2xl my-2 text-center'>Book Note App (full-stack)</h3>
       <p className='my-2 text-gray-500 flex justify-start items-center text-sm'> Using the Google Books API, users can effortlessly search for their favorite books and add them to their personal library. Users can also add notes to their books that come to mind while reading.</p>
       <hr />
         <div className='flex justify-start py-2 my-2'>
@@ -112,7 +112,7 @@ export default function Projects() {
 
        <div className='py-3 px-3 my-8 rounded-lg max-w-sm bg-white shadow-lg shadow-gray-400'>
       <Image src={manchester} alt='quiz' />
-      <h3 className='text-2xl my-2'>Visit Manchester</h3>
+      <h3 className='text-2xl my-2 text-center'>Visit Manchester</h3>
       <p className='my-2 text-gray-500 flex justify-start items-center text-sm'>This project showcases my ability to create responsive and dynamic websites using React, featuring impressive JavaScript animations and advanced routing systems.</p>
       <hr />
         <div className='flex justify-start py-2 my-2'>

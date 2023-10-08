@@ -37,12 +37,12 @@ export default function Contact() {
     <div className='text-white flex justify-center items-center flex-col'>
       <form ref={form} onSubmit={sendEmail} className="flex flex-col justify-center items-center my-10"> 
         <label htmlFor='user_name' className="mb-2">Full Name</label>
-        <input id='user_name' type="text" required name='user_name' className="mb-4 text-black lg:w-96 w-60" />
+        <input id='user_name' type="text" required name='user_name' className="mb-4 text-black lg:w-96 w-80" />
         <label  htmlFor='user_email' className="mb-2">E-mail</label>
-        <input id='user_email' type="email" required name='user_email' className="mb-4 text-black lg:w-96 w-60" />
+        <input id='user_email' type="email" required name='user_email' className="mb-4 text-black lg:w-96 w-80" />
         <label htmlFor='message' className="mb-2">Message</label>
-        <textarea id='message' type="text" required name='message' rows="4" className="mb-4 resize-none text-black lg:w-96 w-60" /> 
-        <button className='p-1 lg:w-96 w-60 h-12 bg-[#FFAA00] hover:bg-[#f8ca6e] border-[1px] border-black text-white rounded-lg'>{submitting ? 'Submitting...' : 'Submit'}</button>
+        <textarea id='message' type="text" required name='message' rows="4" className="mb-4 resize-none text-black lg:w-96 w-80" /> 
+        <button className='p-1 lg:w-96 w-80 h-12 bg-[#FFAA00] hover:bg-[#f8ca6e] border-[1px] border-black text-white rounded-lg'>{submitting ? 'Submitting...' : 'Submit'}</button>
       </form>
       {showSuccessMessage && (
       <div className="bg-green-500 text-white p-2 text-center my-4">
