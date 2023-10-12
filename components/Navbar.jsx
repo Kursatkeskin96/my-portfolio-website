@@ -51,7 +51,7 @@ const handleNav = () => {
 
     <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70  text-black ' : ''}> 
       <div className={nav 
-      ? 'fixed left-0 top-0 w-[100%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] dark:bg-black p-10 ease-in duration-500 ' 
+      ? 'fixed left-0 top-0 w-[100%] sm:w-[60%] md:w-[45%] mb-10 h-screen bg-[#ecf0f3] dark:bg-black p-10 ease-in duration-500 ' 
       : 'fixed left-[-100%] h-screen top-0 p-10 ease-in duration-500 ' }>
         <div>
           <div className='flex  items-center justify-between'>
