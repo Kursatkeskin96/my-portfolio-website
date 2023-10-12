@@ -25,7 +25,7 @@ import 'swiper/css/pagination';
 function Skills() {
   return (
     <>
-    <div id='skills' className='max-w-[90%] text-center text-4xl text-[#FFAA00] border-b border-white pb-4 mx-auto'>SKILLS</div>
+    <div id='skills' className='max-w-[90%] text-center text-4xl text-[#FFAA00] border-b dark:border-white border-black pb-4 mx-auto'>SKILLS</div>
     <div className=''>
     <Swiper className='max-w-[90%] mt-10'
     modules={[ A11y, Autoplay]}
@@ -37,7 +37,7 @@ function Skills() {
     breakpoints={{
         // when window width is >= 640px
         360: {
-          slidesPerView: 3,
+          slidesPerView: 2,
           spaceBetween: 20,
         },
         // when window width is >= 768px
@@ -87,7 +87,7 @@ function Skills() {
     </SwiperSlide>
     <SwiperSlide>
     <div className=' hover:scale-105 cursor-pointer duration-300 ease-in py-3 my-8 mb-12 mx-auto rounded-lg max-w-sm w-16'>
-      <Image src={nextjs} alt='quiz' className='bg-white rounded-lg p-1' />
+      <Image src={nextjs} alt='quiz' className=' rounded-lg p-1 bg-white' />
        </div>
     </SwiperSlide>
     <SwiperSlide>
@@ -97,7 +97,7 @@ function Skills() {
     </SwiperSlide>
     <SwiperSlide>
     <div className=' hover:scale-105 cursor-pointer duration-300 ease-in py-3 my-8 mb-12 mx-auto rounded-lg max-w-sm w-16'>
-      <Image src={github} alt='quiz' className='bg-white rounded-lg p-1' />
+      <Image src={github} alt='quiz' className=' rounded-lg p-1 bg-white' />
        </div>
     </SwiperSlide>
     <SwiperSlide>

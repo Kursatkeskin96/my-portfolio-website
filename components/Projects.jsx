@@ -22,15 +22,15 @@ import manchester from '@/images/visitmanchester.png'
 export default function Projects() {
   return (
     <>
-        <div id='projects' className='mt-20 w-[90%] text-center text-4xl text-[#FFAA00] border-b border-white pb-4 mx-auto'>Projects</div>
+        <div id='projects' className='mt-20 w-[90%] text-center text-4xl text-[#FFAA00] border-b border-black dark:border-white pb-4 mx-auto'>Projects</div>
     <div className='w-full p-2' >
     <div className='max-w-[90%] mx-auto flex flex-col justify-center h-full'>
        <div className='grid lg:grid-cols-2 grid-cols-1 mx-auto gap-20 mt-10'>
 
-       <div className='py-3 px-3 my-8 rounded-lg max-w-sm bg-white shadow-lg shadow-gray-400'>
+       <div className='py-3 px-3 my-8 rounded-lg max-w-sm dark:bg-white bg-[#393e46] shadow-lg shadow-gray-400'>
       <Image src={gunes} alt='quiz' />
-      <h3 className='text-2xl my-2 text-center'>Memory Website (full-stack)</h3>
-      <p className='my-2 text-gray-500 flex justify-start items-center text-sm h-36'>I created this website for my nephew's 2nd birthday. It's an interactive memory book for family members to log in, share messages and photos. It includes a section for his first words and meanings, as well as a monthly progress gallery. Parents have an admin panel for content and user management. Username: Nenem Password: nenem123</p>
+      <h3 className='text-2xl my-2 text-center text-white dark:text-black'>Memory Website (full-stack)</h3>
+      <p className='my-2 dark:text-gray-500 text-gray-300 flex justify-start items-center text-sm h-36'>I created this website for my nephew's 2nd birthday. It's an interactive memory book for family members to log in, share messages and photos. It includes a section for his first words and meanings, as well as a monthly progress gallery. Parents have an admin panel for content and user management. Username: Nenem Password: nenem123</p>
       <hr />
         <div className='flex justify-start py-2 my-2'>
         <Image className='mx-1' src={html} alt='javascript' width={16} height={16} />
@@ -56,10 +56,10 @@ export default function Projects() {
        </div>
         
      
-       <div className='py-3 px-3 my-8 rounded-lg max-w-sm bg-white shadow-lg shadow-gray-400'>
+       <div className='py-3 px-3 my-8 rounded-lg max-w-sm dark:bg-white bg-[#393e46] shadow-lg shadow-gray-400'>
       <Image src={ozdemir} alt='quiz' />
-      <h3 className='text-2xl my-2 text-center'>Law Firm Website</h3>
-      <p className='my-2 text-gray-500 flex justify-start items-center text-sm h-36'>This website has been developed for a law firm located in Turkey. The platform seamlessly integrates language support for both Turkish and English, ensuring that clients and visitors can engage with the content in their preferred language. The site is currently live and accessible on hukukozdemir.com to users.</p>
+      <h3 className='text-2xl my-2 text-center text-white dark:text-black'>Law Firm Website</h3>
+      <p className='my-2  dark:text-gray-500 text-gray-300 flex justify-start items-center text-sm h-36'>This website has been developed for a law firm located in Turkey. The platform seamlessly integrates language support for both Turkish and English, ensuring that clients and visitors can engage with the content in their preferred language. The site is currently live and accessible on hukukozdemir.com to users.</p>
       <hr />
         <div className='flex justify-start py-2 my-2'>
         <Image className='mx-1' src={html} alt='javascript' width={16} height={16} />
@@ -82,10 +82,10 @@ export default function Projects() {
         </div>
        </div>
 
-       <div className='py-3 px-3 my-8 rounded-lg max-w-sm bg-white shadow-lg shadow-gray-400'>
+       <div className='py-3 px-3 my-8 rounded-lg max-w-sm dark:bg-white bg-[#393e46] shadow-lg shadow-gray-400'>
       <Image src={booknote} alt='quiz' />
-      <h3 className='text-2xl my-2 text-center'>Book Note App (full-stack)</h3>
-      <p className='my-2 text-gray-500 flex justify-start items-center text-sm'> Using the Google Books API, users can effortlessly search for their favorite books and add them to their personal library. Users can also add notes to their books that come to mind while reading.</p>
+      <h3 className='text-2xl my-2 text-white dark:text-black text-center'>Book Note App (full-stack)</h3>
+      <p className='my-2 dark:text-gray-500 text-gray-300 flex justify-start items-center text-sm'> Using the Google Books API, users can effortlessly search for their favorite books and add them to their personal library. Users can also add notes to their books that come to mind while reading.</p>
       <hr />
         <div className='flex justify-start py-2 my-2'>
         <Image className='mx-1' src={html} alt='javascript' width={16} height={16} />
@@ -110,10 +110,10 @@ export default function Projects() {
         </div>
        </div>
 
-       <div className='py-3 px-3 my-8 rounded-lg max-w-sm bg-white shadow-lg shadow-gray-400'>
+       <div className='py-3 px-3 my-8 rounded-lg max-w-sm  dark:bg-white bg-[#393e46] shadow-lg shadow-gray-400'>
       <Image src={manchester} alt='quiz' />
-      <h3 className='text-2xl my-2 text-center'>Visit Manchester</h3>
-      <p className='my-2 text-gray-500 flex justify-start items-center text-sm'>This project showcases my ability to create responsive and dynamic websites using React, featuring impressive JavaScript animations and advanced routing systems.</p>
+      <h3 className='text-2xl my-2 text-center text-white dark:text-black'>Visit Manchester</h3>
+      <p className='my-2 dark:text-gray-500 text-gray-300 flex justify-start items-center text-sm'>This project showcases my ability to create responsive and dynamic websites using React, featuring impressive JavaScript animations and advanced routing systems.</p>
       <hr />
         <div className='flex justify-start py-2 my-2'>
         <Image className='mx-1' src={html} alt='javascript' width={16} height={16} />
