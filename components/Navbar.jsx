@@ -43,8 +43,12 @@ const handleNav = () => {
           </Link>
           <li className='ml-5 text-sm'><ThemeButton /></li>
         </ul>
+
+        <div className='flex justify-between items-center gap-6'>
+          <div className='md:hidden'><ThemeButton /></div>
         <div onClick={handleNav} className='md:hidden cursor-pointer'>
           <AiOutlineMenu className='text-black dark:text-white' size={25} />
+        </div>
         </div>
       </div>
      </div>
@@ -81,7 +85,6 @@ const handleNav = () => {
             <Link href='#contact'>
               <li onClick={() => setNav(false)} className='py-4 text-sm dark:text-white'>Contact</li>
             </Link>
-            <li  className='py-4'><ThemeButton /></li>
           </ul>
           <div className=' pt-28'>
             <p className='uppercase tracking-widest text-[#FFAA00]'>Lets connect</p>

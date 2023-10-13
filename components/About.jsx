@@ -4,7 +4,7 @@ import kursat2 from '@/images/kursat2.svg'
 export default function About() {
   return (
     <>
-    <div id='about' className='max-w-[90%] text-center text-4xl text-[#FFAA00] border-b dark:border-white border-black pb-4 mx-auto'>ABOUT ME</div>
+    <div id='about' className='max-w-[90%] md:mt-20 text-center text-4xl text-[#FFAA00] border-b dark:border-white border-black pb-4 mx-auto'>ABOUT ME</div>
     <div className='my-20 dark:bg-black text-white w-[90%] mx-auto flex justify-around items-center flex-wrap'>
     <div className='lg:mt-0 md:mt-0'>
             <Image src={kursat2} width={300} alt='kursat' />
