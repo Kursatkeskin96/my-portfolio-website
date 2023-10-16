@@ -20,7 +20,7 @@ export default function HeroSection() {
         </div>
         <div className='mt-10 lg:mt-0 md:mt-0 '>
           <div className='relative flex h-[300px] items-start justify-center before:absolute before:h-[295px] before:w-[340px] before: bg-gradient-to-l from-[#ffd072] to-[#FFAA00]'>
-        <Image src={kursat} width={330} alt='kursat' className='z-10 mr-[10px]' />
+             <Image src={kursat} width={330} alt='kursat' className='z-10 mr-[10px]' /> 
         </div>
         </div>
     </div>

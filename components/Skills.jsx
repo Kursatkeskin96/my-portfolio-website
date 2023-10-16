@@ -33,12 +33,12 @@ function Skills() {
     autoplay={{
         delay: 0,
         disableOnInteraction: false 
-      }}
+      }}  
     breakpoints={{
         // when window width is >= 640px
         360: {
-          slidesPerView: 2,
-          spaceBetween: 20,
+          slidesPerView: 3,
+          spaceBetween: 5,
         },
         // when window width is >= 768px
         768: {
@@ -47,8 +47,8 @@ function Skills() {
         },
         // when window width is >= 1024px
         1024: {
-          slidesPerView: 3,
-          spaceBetween: 20,
+          slidesPerView: 5,
+          spaceBetween: 5,
         },
       }} loop={true}
     >
