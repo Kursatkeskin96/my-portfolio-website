@@ -18,6 +18,8 @@ import booknote from '@/images/Booknote.png'
 import ozdemir from '@/images/ozdemir.png'
 import gunes from '@/images/gunes.png'
 import manchester from '@/images/visitmanchester.png'
+import prisma from '@/images/prisma.png'
+import aj from '@/images/aj.png'
 
 export default function Projects() {
   return (
@@ -44,12 +46,12 @@ export default function Projects() {
         <div className='flex justify-center my-4'>
           <div className='px-2'>
             <Link href='https://github.com/Kursatkeskin96/memory-blog' target="_blank" >
-        <button className='p-1 w-20 bg-[#FFAA00] hover:bg-[#f8ca6e] border-[1px] border-black text-white rounded-lg'>Code</button>
+        <button className='p-1 w-20 bg-[#FFAA00] hover:bg-[#f8ca6e] border-[1px] border-black text-[#242424] rounded-lg'>Code</button>
         </Link>
         </div>
         <div className='px-2'>
         <Link href='https://gunesozdemir.vercel.app/' target="_blank" >
-        <button className='p-1 w-20 bg-white hover:bg-gray-200 text-[#FFAA00] border-[1px] border-black rounded-lg'>Live</button>
+        <button className='p-1 w-20 text-[#FFAA00] hover:bg-gray-800 bg-black border-[1px] border-black rounded-lg'>Live</button>
         </Link>
         </div>
         </div>
@@ -71,12 +73,39 @@ export default function Projects() {
         <div className='flex justify-center my-4'>
           <div className='px-2'>
             <Link href='https://github.com/Kursatkeskin96/ozdemirhukuk' target="_blank" >
-        <button className='p-1 w-20 bg-[#FFAA00] hover:bg-[#f8ca6e] border-[1px] border-black text-white rounded-lg'>Code</button>
+            <button className='p-1 w-20 bg-[#FFAA00] hover:bg-[#f8ca6e] border-[1px] border-black text-[#242424] rounded-lg'>Code</button>
         </Link>
         </div>
         <div className='px-2'>
         <Link href='https://www.hukukozdemir.com/en' target="_blank" >
-        <button className='p-1 w-20 bg-white hover:bg-gray-200 text-[#FFAA00] border-[1px] border-black rounded-lg'>Live</button>
+        <button className='p-1 w-20 text-[#FFAA00] hover:bg-gray-800 bg-black border-[1px] border-black rounded-lg'>Live</button>
+        </Link>
+        </div>
+        </div>
+       </div>
+
+       <div className='py-3 px-3 my-8 rounded-lg max-w-sm  dark:bg-white bg-[#393e46] shadow-lg shadow-gray-400'>
+      <Image src={aj} alt='quiz' />
+      <h3 className='text-2xl my-2 text-center text-white dark:text-black'>Albion Journey</h3>
+      <p className='my-2 dark:text-gray-500 text-gray-300 flex justify-start items-center text-sm'>This full-stack project is designed for Albion Online enthusiasts, providing a comprehensive database and analytics tool. The platform is geared towards managing extensive game data and honing SEO strategies with the goal of reaching 30K monthly visitors. It serves as a practice ground for scaling and SEO optimization, tailored to the needs of the game's community. This is a private repository. If you would like to see the code, please reach out to me.</p>
+      <hr />
+        <div className='flex justify-start py-2 my-2'>
+        <Image className='mx-1' src={html} alt='javascript' width={16} height={16} />
+        <Image className='mx-1' src={css} alt='javascript' width={16} height={16} />
+        <Image className='mx-1' src={tailwind} alt='javascript' width={16} height={16} />
+        <Image className='mx-1' src={react} alt='javascript' width={16} height={16} />
+        <Image className='mx-1' src={nextjs} alt='javascript' width={16} height={16} />
+        <Image className='mx-1' src={mongo} alt='javascript' width={16} height={16} />
+        <Image className='mx-1' src={postman} alt='javascript' width={16} height={16} />
+        <Image className='mx-1' src={prisma} alt='javascript' width={12} height={12} />
+        </div>
+        <div className='flex justify-center my-4'>
+          <div className='px-2'>
+        <button disabled className='p-1 w-20 bg-[#FFAA00] border-[1px] border-black text-[#242424] rounded-lg'>Code</button>
+        </div>
+        <div className='px-2'>
+        <Link href='https://www.albionjourney.com/' target="_blank" >
+        <button className='p-1 w-20 text-[#FFAA00] hover:bg-gray-800 bg-black border-[1px] border-black rounded-lg'>Live</button>
         </Link>
         </div>
         </div>
@@ -85,7 +114,7 @@ export default function Projects() {
        <div className='py-3 px-3 my-8 rounded-lg max-w-sm dark:bg-white bg-[#393e46] shadow-lg shadow-gray-400'>
       <Image src={booknote} alt='quiz' />
       <h3 className='text-2xl my-2 text-white dark:text-black text-center'>Book Note App (full-stack)</h3>
-      <p className='my-2 dark:text-gray-500 text-gray-300 flex justify-start items-center text-sm'> Using the Google Books API, users can effortlessly search for their favorite books and add them to their personal library. Users can also add notes to their books that come to mind while reading.</p>
+      <p className='my-2 dark:text-gray-500 text-gray-300 flex justify-start items-center text-sm'>This application integrated with the Google Books API, offers a seamless way for users to search and discover a wide range of books. It allows users to add their favorite reads to a personal library and enrich their reading experience by adding custom notes to any book. This feature is particularly useful for capturing thoughts and insights while reading, making our platform not just a library, but a personal reading companion.</p>
       <hr />
         <div className='flex justify-start py-2 my-2'>
         <Image className='mx-1' src={html} alt='javascript' width={16} height={16} />
@@ -99,42 +128,17 @@ export default function Projects() {
         <div className='flex justify-center my-4'>
           <div className='px-2'>
             <Link href='https://github.com/Kursatkeskin96/booknoteapp' target="_blank" >
-        <button className='p-1 w-20 bg-[#FFAA00] hover:bg-[#f8ca6e] border-[1px] border-black text-white rounded-lg'>Code</button>
+            <button className='p-1 w-20 bg-[#FFAA00] hover:bg-[#f8ca6e] border-[1px] border-black text-[#242424] rounded-lg'>Code</button>
         </Link>
         </div>
         <div className='px-2'>
         <Link href='https://booknoteapp.vercel.app/' target="_blank" >
-        <button className='p-1 w-20 bg-white hover:bg-gray-200 text-[#FFAA00] border-[1px] border-black rounded-lg'>Live</button>
+        <button className='p-1 w-20 text-[#FFAA00] hover:bg-gray-800 bg-black border-[1px] border-black rounded-lg'>Live</button>
         </Link>
         </div>
         </div>
        </div>
 
-       <div className='py-3 px-3 my-8 rounded-lg max-w-sm  dark:bg-white bg-[#393e46] shadow-lg shadow-gray-400'>
-      <Image src={manchester} alt='quiz' />
-      <h3 className='text-2xl my-2 text-center text-white dark:text-black'>Visit Manchester</h3>
-      <p className='my-2 dark:text-gray-500 text-gray-300 flex justify-start items-center text-sm'>This project showcases my ability to create responsive and dynamic websites using React, featuring impressive JavaScript animations and advanced routing systems.</p>
-      <hr />
-        <div className='flex justify-start py-2 my-2'>
-        <Image className='mx-1' src={html} alt='javascript' width={16} height={16} />
-        <Image className='mx-1' src={css} alt='javascript' width={16} height={16} />
-        <Image className='mx-1' src={javascript} alt='javascript' width={16} height={16} />
-        <Image className='mx-1' src={react} alt='javascript' width={16} height={16} />
-        <Image className='mx-1' src={bootstrap} alt='javascript' width={16} height={16} />
-        </div>
-        <div className='flex justify-center my-4'>
-          <div className='px-2'>
-            <Link href='https://github.com/Kursatkeskin96/visitmanchester' target="_blank" >
-        <button className='p-1 w-20 bg-[#FFAA00] hover:bg-[#f8ca6e] border-[1px] border-black text-white rounded-lg'>Code</button>
-        </Link>
-        </div>
-        <div className='px-2'>
-        <Link href='https://visitmanchester.netlify.app/' target="_blank" >
-        <button className='p-1 w-20 bg-white hover:bg-gray-200 text-[#FFAA00] border-[1px] border-black rounded-lg'>Live</button>
-        </Link>
-        </div>
-        </div>
-       </div>
       </div>
       </div>
       </div>

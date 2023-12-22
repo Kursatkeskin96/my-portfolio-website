@@ -42,7 +42,7 @@ export default function Contact() {
         <input id='user_email' type="email" required name='user_email' className="mb-4 pl-2 dark:bg-white border border-black text-black lg:w-96 w-80" />
         <label htmlFor='message' className="mb-2 text-left">Message</label>
         <textarea id='message' type="text" required name='message' rows="4" className="mb-4 pl-2 dark:bg-white border border-black resize-none text-black lg:w-96 w-80" /> 
-        <button className='p-1 lg:w-96 w-80 h-12 bg-[#FFAA00] hover:bg-[#f8ca6e]  text-white rounded-lg'>{submitting ? 'Submitting...' : 'Submit'}</button>
+        <button className='p-1 lg:w-96 w-80 h-12 bg-[#FFAA00] hover:bg-[#f8ca6e]  text-black  rounded-lg'>{submitting ? 'Submitting...' : 'Submit'}</button>
       </form>
       {showSuccessMessage && (
       <div className="bg-green-500 text-white p-2 text-center my-4">

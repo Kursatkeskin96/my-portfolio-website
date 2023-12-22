@@ -25,24 +25,24 @@ const handleNav = () => {
       <span className='font hover:border-b text-black dark:text-white hover:border-[#FFAA00]'>kursatkeskin.com</span>
       </Link>
       <div>
-        <ul className='hidden md:flex'>
+        <div className='hidden md:flex'>
           <Link href='#home'>
-            <li className='ml-10 text-sm uppercase hover:border-b hover:border-[#FFAA00] text-[#FFAA00]'>Home</li>
+            <div className='ml-10 text-sm uppercase hover:border-b hover:border-[#FFAA00] text-[#FFAA00]'>Home</div>
           </Link>
           <Link href='#about'>
-            <li className='ml-10 text-sm uppercase text-black dark:text-white  hover:border-b hover:border-[#FFAA00]'>About</li>
+            <div className='ml-10 text-sm uppercase text-black dark:text-white  hover:border-b hover:border-[#FFAA00]'>About</div>
           </Link>
           <Link href='#skills'>
-            <li className='ml-10 text-sm uppercase text-black dark:text-white hover:border-b hover:border-[#FFAA00]'>Skills</li>
+            <div className='ml-10 text-sm uppercase text-black dark:text-white hover:border-b hover:border-[#FFAA00]'>Skills</div>
           </Link>
           <Link href='#projects'>
-            <li className='ml-10 text-sm uppercase  text-black dark:text-white hover:border-b hover:border-[#FFAA00]'>Projects</li>
+            <div className='ml-10 text-sm uppercase  text-black dark:text-white hover:border-b hover:border-[#FFAA00]'>Projects</div>
           </Link>
           <Link href='#contact'>
-            <li className='ml-10 text-sm uppercase  text-black dark:text-white hover:border-b hover:border-[#FFAA00]'>Contact</li>
+            <div className='ml-10 text-sm uppercase  text-black dark:text-white hover:border-b hover:border-[#FFAA00]'>Contact</div>
           </Link>
-          <li className='ml-5 text-sm'><ThemeButton /></li>
-        </ul>
+          <div className='ml-5 text-sm'><ThemeButton /></div>
+        </div>
 
         <div className='flex justify-between items-center gap-6'>
           <div className='md:hidden'><ThemeButton /></div>
@@ -69,23 +69,23 @@ const handleNav = () => {
           </div>
         </div>
         <div className='flex flex-col'>
-          <ul className='uppercase'>
+          <div className='uppercase'>
             <Link href='#home'>
-              <li onClick={() => setNav(false)} className='py-4 text-sm dark:text-white'>Home</li>
+             <div onClick={() => setNav(false)} className='py-4 text-sm dark:text-white'>Home</div>
             </Link>
             <Link href='#about'>
-              <li onClick={() => setNav(false)} className='py-4 text-sm dark:text-white'>About</li>
+             <div onClick={() => setNav(false)} className='py-4 text-sm dark:text-white'>About</div>
             </Link>
             <Link href='#skills'>
-              <li onClick={() => setNav(false)} className='py-4 text-sm dark:text-white'>Skills</li>
+              <div onClick={() => setNav(false)} className='py-4 text-sm dark:text-white'>Skills</div>
             </Link>
             <Link href='#projects'>
-              <li onClick={() => setNav(false)} className='py-4 text-sm dark:text-white'>Projects</li>
+              <div onClick={() => setNav(false)} className='py-4 text-sm dark:text-white'>Projects</div>
             </Link>
             <Link href='#contact'>
-              <li onClick={() => setNav(false)} className='py-4 text-sm dark:text-white'>Contact</li>
+              <div onClick={() => setNav(false)} className='py-4 text-sm dark:text-white'>Contact</div>
             </Link>
-          </ul>
+          </div>
           <div className=' pt-28'>
             <p className='uppercase tracking-widest text-[#FFAA00]'>Lets connect</p>
             <div className='flex items-center justify-start my-4 w-full sm:w=[80%]'>
