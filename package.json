@@ -12,13 +12,17 @@
     "@emailjs/browser": "^3.11.0",
     "@heroicons/react": "^2.0.18",
     "@vercel/analytics": "^1.1.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.3.30",
     "next": "13.5.4",
     "next-themes": "^0.2.1",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.11.0",
     "react-simple-typewriter": "^5.0.1",
-    "swiper": "^10.3.1"
+    "swiper": "^10.3.1",
+    "tailwind-merge": "^2.5.2",
+    "three": "^0.167.1"
   },
   "devDependencies": {
     "autoprefixer": "^10",
