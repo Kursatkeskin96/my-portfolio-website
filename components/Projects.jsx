@@ -134,14 +134,14 @@ export default function Projects() {
                 This website is built for the Albion Online community. It
                 features live market price data with graphs, a marketplace where
                 players can sell their items, item crafting calculators, and
-                guide blogs. This is a private repository. If you would like to
-                see the code, please reach out to me.
+                guide blogs. 
               </p>
               <div className="flex justify-center my-4">
                 <div className="px-2">
-                  <div className="p-1 w-32 bg-[#00563A] text-center text-white rounded-lg">
+            <Link href='https://github.com/Kursatkeskin96/full-stack-game-tool' target="_blank">
+            <div className="p-1 w-32 bg-[#00563A] text-center text-white rounded-lg">
                     Code
-                  </div>
+                  </div></Link>
                 </div>
                 <div className="px-2">
                   <Link href="https://www.albionjourney.com/" target="_blank">
