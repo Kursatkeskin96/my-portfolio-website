@@ -63,7 +63,7 @@ const Modal = ({ isOpen, onClose, year, text, title }) => {
                   {title}{" "}
                   <span className="text-sm italic text-gray-500">({year})</span>
                 </h2>
-                <hr class="w-full h-[2px] mx-auto bg-[#012218] border-0 rounded my-8"></hr>
+                <hr className="w-full h-[2px] mx-auto bg-[#012218] border-0 rounded my-8"></hr>
                 <p className="text-sm text-left rubik text-gray-500">{text}</p>
               </div>
             </div>
