@@ -73,7 +73,13 @@ export default function Timeline() {
           <div id="stars2"></div>
           <div id="stars3"></div>
         </div>
-  
+
+        <div className="w-[100%] text-center py-5">
+        <h2 className="text-center w-full text-3xl md:mb-5 nato-serif font-bold text-white nato-serif tracking-wider">
+             Timeline
+          </h2>
+          <p className=" text-gray-300 text-sm md:text-base px-5 md:px-0 w-[80%] md:w-full mx-auto mt-3 md:mt-0">Click on each year to discover more about my journey.</p>
+        </div>
 
         <motion.div
           ref={horizontalRef} 
@@ -126,7 +132,7 @@ export default function Timeline() {
 
         <motion.div
           ref={verticalRef}
-          className="w-[100%] px-5 md:px-10 my-16 lg:my-20 2xl:my-32 flex flex-col justify-center items-center gap-3 md:hidden"
+          className="w-[100%] px-5 md:px-10 my-8 md:my-16 lg:my-20 2xl:my-32 flex flex-col justify-center items-center gap-3 md:hidden"
           variants={containerVariants}
           initial="hidden"
           animate={isVerticalInView ? "visible" : "hidden"} 
@@ -134,6 +140,7 @@ export default function Timeline() {
           <motion.div
             className="w-[60px] h-[60px] md:w-[40px] md:h-[40px] md:text-sm lg:text-base lg:w-[60px] lg:h-[60px] 2xl:w-[70px]  2xl:h-[70px] rounded-[50%] bg-[#012218] text-white flex justify-center items-center text-sm cursor-pointer"
             variants={itemVariants}
+            onClick={() => openModal("2020")}
           >
             2020
           </motion.div>
@@ -141,6 +148,7 @@ export default function Timeline() {
           <motion.div
             className="w-[60px] h-[60px] md:w-[40px] md:h-[40px] md:text-sm lg:text-base lg:w-[60px] lg:h-[60px] 2xl:w-[70px]  2xl:h-[70px] rounded-[50%] bg-[#012218] text-white flex justify-center items-center text-sm cursor-pointer"
             variants={itemVariants}
+            onClick={() => openModal("2021")}
           >
             2021
           </motion.div>
@@ -148,6 +156,7 @@ export default function Timeline() {
           <motion.div
             className="w-[60px] h-[60px] md:w-[40px] md:h-[40px] md:text-sm lg:text-base lg:w-[60px] lg:h-[60px] 2xl:w-[70px]  2xl:h-[70px] rounded-[50%] bg-[#012218] text-white flex justify-center items-center text-sm cursor-pointer"
             variants={itemVariants}
+            onClick={() => openModal("2022")}
           >
             2022
           </motion.div>
@@ -155,6 +164,7 @@ export default function Timeline() {
           <motion.div
             className="w-[60px] h-[60px] md:w-[40px] md:h-[40px] md:text-sm lg:text-base lg:w-[60px] lg:h-[60px] 2xl:w-[70px]  2xl:h-[70px] rounded-[50%] bg-[#012218] text-white flex justify-center items-center text-sm cursor-pointer"
             variants={itemVariants}
+            onClick={() => openModal("2023")}
           >
             2023
           </motion.div>
@@ -162,6 +172,7 @@ export default function Timeline() {
           <motion.div
             className="w-[60px] h-[60px] md:w-[40px] md:h-[40px] md:text-sm lg:text-base lg:w-[60px] lg:h-[60px] 2xl:w-[70px]  2xl:h-[70px] rounded-[50%] bg-[#012218] text-white flex justify-center items-center text-sm cursor-pointer"
             variants={itemVariants}
+            onClick={() => openModal("2024")}
           >
             2024
           </motion.div>

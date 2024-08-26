@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <div className="lg:mb-0 md:mb-0 min-h-screen dark:bg-white bg-white px-5 md:px-10 dark:text-white text-black w-[100%] mx-auto flex justify-around pb-[100px] pt-[70px] items-center flex-wrap headerbg">
+    <div className="lg:mb-0 md:mb-0 min-h-screen px-5 md:px-10 w-[100%] mx-auto flex justify-around md:pb-[100px] md:pt-[70px] pt-[75px] items-start md:items-center flex-wrap headerbg">
       <motion.div
         initial={{ opacity: 0, z: 100 }}
         animate={{ opacity: 1, z: 0 }}
