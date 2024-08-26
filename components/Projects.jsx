@@ -314,7 +314,7 @@ export default function Projects() {
               <div className="flex justify-center my-4">
                 <div className="px-2">
                   <Link
-                    href="https://github.com/Kursatkeskin96/ozdemirhukuk"
+                    href="https://github.com/Kursatkeskin96/lawfirm-website"
                     target="_blank"
                   >
                     <button className="p-1 w-32 bg-[#00563A]  hover:bg-[#0c6c4c] text-white rounded-lg">
