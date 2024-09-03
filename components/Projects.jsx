@@ -15,7 +15,7 @@ import ozdemir from "@/images/ozdemir.png";
 import python from "@/images/python.png";
 import prisma from "@/images/prisma.png";
 import aj from "@/images/aj.png";
-import fastapi from '@/images/fastAPI.png'
+import fastapi from '@/images/FastAPI.png'
 import postgre from '@/images/postgre.png'
 import RedirectModal from "./RedirectModal";
 import pythonproject from '@/images/pythonproject.png'
