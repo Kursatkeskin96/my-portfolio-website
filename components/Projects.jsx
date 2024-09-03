@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import html from "@/images/html.png";
 import css from "@/images/css.png";
@@ -12,9 +12,14 @@ import cook from "@/images/cook.png";
 import Image from "next/image";
 import Link from "next/link";
 import ozdemir from "@/images/ozdemir.png";
-import gunes from "@/images/gunes.png";
+import python from "@/images/python.png";
 import prisma from "@/images/prisma.png";
 import aj from "@/images/aj.png";
+import fastapi from '@/images/fastAPI.png'
+import postgre from '@/images/postgre.png'
+import RedirectModal from "./RedirectModal";
+import pythonproject from '@/images/pythonproject.png'
+import aws from '@/images/amazonwebservices.svg'
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -34,6 +39,15 @@ const cardVariants = {
 export default function Projects() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <div className="projectsbg">
@@ -58,6 +72,116 @@ export default function Projects() {
             animate={isInView ? "visible" : "hidden"}
           >
             {/* Project Cards with animation */}
+            <motion.div
+              variants={cardVariants}
+              className="py-6 px-6  my-8 rounded-lg max-w-sm  glass-bg "
+            >
+              <Image src={pythonproject} alt="quiz" className="rounded-lg" />
+              <div className="flex justify-start gap-10 items-center pt-4">
+                <div className="px-4 py-[2px] font-bold text-[10px] rounded-[20px] bg-[#C1E1C1] text-[#00563A] nato-serif">
+                  full-stack
+                </div>
+                <h3 className="text-lg my-2 text-center text-white font-bold nato-serif">
+                  Conference System
+                </h3>
+              </div>
+              <div className="flex justify-start py-6">
+                <Image
+                  className="mx-1"
+                  src={html}
+                  alt="javascript"
+                  width={16}
+                  height={16}
+                />
+                <Image
+                  className="mx-1"
+                  src={css}
+                  alt="javascript"
+                  width={16}
+                  height={16}
+                />
+                <Image
+                  className="mx-1"
+                  src={tailwind}
+                  alt="javascript"
+                  width={16}
+                  height={16}
+                />
+                <Image
+                  className="mx-1"
+                  src={react}
+                  alt="javascript"
+                  width={16}
+                  height={16}
+                />
+                <Image
+                  className="mx-1"
+                  src={nextjs}
+                  alt="javascript"
+                  width={16}
+                  height={16}
+                />
+                <Image
+                  className="mx-1"
+                  src={python}
+                  alt="javascript"
+                  width={16}
+                  height={16}
+                />
+                <Image
+                  className="mx-1"
+                  src={fastapi}
+                  alt="javascript"
+                  width={16}
+                  height={32}
+                />
+                <Image
+                  className="mx-1"
+                  src={postgre}
+                  alt="javascript"
+                  width={16}
+                  height={16}
+                />
+                                <Image
+                  className="mx-1"
+                  src={aws}
+                  alt="javascript"
+                  width={16}
+                  height={16}
+                />
+                <Image
+                  className="mx-1"
+                  src={postman}
+                  alt="javascript"
+                  width={16}
+                  height={16}
+                />
+              </div>
+              <hr className="w-full h-[1px] mx-auto mb-4 bg-[#ffc218] border-0 rounded"></hr>
+              <p className="my-2 dark:text-gray-300 flex justify-start items-center text-sm h-36 rubik">
+              A full-stack application using Next.js, FastAPI, and PostgreSQL for managing conference requests. It features secure authentication, a request submission form, and an admin dashboard for reviewing statistics and approving or rejecting requests. username: user@gmail.com password: test123
+
+
+              </p>
+
+              <div className="flex justify-center my-4">
+                <div className="px-2">
+       
+                    <button onClick={handleOpenModal} className="p-1 w-32 bg-[#00563A] hover:bg-[#0c6c4c]   text-white rounded-lg">
+                      Code
+                    </button>
+
+                </div>
+                <div className="px-2">
+                  <Link href="https://fullstack-conference-request.vercel.app/" target="_blank">
+                    <button className="p-1 w-32 text-[#00563A] hover:bg-gray-200 bg-white border-[1px] border-[#00563A] rounded-lg">
+                      Live
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+
             <motion.div
               variants={cardVariants}
               className="py-6 px-6  my-8 rounded-lg max-w-sm  glass-bg "
@@ -332,102 +456,9 @@ export default function Projects() {
               </div>
             </motion.div>
 
-            <motion.div
-              variants={cardVariants}
-              className="py-6 px-6  my-8 rounded-lg max-w-sm  glass-bg "
-            >
-              <Image src={gunes} alt="quiz" className="rounded-lg" />
-              <div className="flex justify-start gap-10 items-center pt-4">
-                <div className="px-4 py-[2px] font-bold text-[10px] rounded-[20px] bg-[#C1E1C1] text-[#00563A] nato-serif">
-                  full-stack
-                </div>
-                <h3 className="text-lg my-2 text-center text-white font-bold nato-serif">
-                  Memory Website
-                </h3>
-              </div>
-              <div className="flex justify-start py-6">
-                <Image
-                  className="mx-1"
-                  src={html}
-                  alt="javascript"
-                  width={16}
-                  height={16}
-                />
-                <Image
-                  className="mx-1"
-                  src={css}
-                  alt="javascript"
-                  width={16}
-                  height={16}
-                />
-                <Image
-                  className="mx-1"
-                  src={tailwind}
-                  alt="javascript"
-                  width={16}
-                  height={16}
-                />
-                <Image
-                  className="mx-1"
-                  src={react}
-                  alt="javascript"
-                  width={16}
-                  height={16}
-                />
-                <Image
-                  className="mx-1"
-                  src={nextjs}
-                  alt="javascript"
-                  width={16}
-                  height={16}
-                />
-                <Image
-                  className="mx-1"
-                  src={mongo}
-                  alt="javascript"
-                  width={16}
-                  height={16}
-                />
-                <Image
-                  className="mx-1"
-                  src={postman}
-                  alt="javascript"
-                  width={16}
-                  height={16}
-                />
-              </div>
-              <hr className="w-full h-[1px] mx-auto mb-4 bg-[#ffc218] border-0 rounded"></hr>
-              <p className="my-2 dark:text-gray-300 flex justify-start items-center text-sm h-36 rubik">
-                I created this website for my nephew's 2nd birthday. It's an
-                interactive memory book for family members to log in, share
-                messages and photos. It includes a section for his first words
-                and meanings, as well as a monthly progress gallery. Parents
-                have an admin panel for content and user management. Username:
-                Nenem Password: nenem123
-              </p>
-
-              <div className="flex justify-center my-4">
-                <div className="px-2">
-                  <Link
-                    href="https://github.com/Kursatkeskin96/memory-blog"
-                    target="_blank"
-                  >
-                    <button className="p-1 w-32 bg-[#00563A] hover:bg-[#0c6c4c]   text-white rounded-lg">
-                      Code
-                    </button>
-                  </Link>
-                </div>
-                <div className="px-2">
-                  <Link href="https://gunesozdemir.vercel.app/" target="_blank">
-                    <button className="p-1 w-32 text-[#00563A] hover:bg-gray-200 bg-white border-[1px] border-[#00563A] rounded-lg">
-                      Live
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </motion.div>
           </motion.div>
         </div>
+        {isModalOpen && <RedirectModal onClose={handleCloseModal} />}
       </div>
     </div>
   );
