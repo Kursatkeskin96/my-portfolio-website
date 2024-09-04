@@ -39,12 +39,14 @@ export default function HeroSection() {
         </p>
 
         <div className="my-6 flex justify-center items-center">
+          <a href="/kursat-keskin-cv.pdf" download>
           <button className="rubik flex justify-center items-center gap-3 w-[200px] hover:bg-[#f6ce61] h-[50px] rounded-[15px] bg-[#FFC217] text-black">
             Download CV{" "}
             <span>
               <BsDownload className="font-bold text-lg pb-[2px]" />
             </span>
           </button>
+          </a>
         </div>
 
         <div className="flex justify-center items-center mt-4">
