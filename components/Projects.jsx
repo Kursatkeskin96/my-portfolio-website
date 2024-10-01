@@ -82,7 +82,7 @@ export default function Projects() {
                   full-stack
                 </div>
                 <h3 className="text-lg my-2 text-center text-white font-bold nato-serif">
-                  Conference System
+                  Conference
                 </h3>
               </div>
               <div className="flex justify-start py-6">
